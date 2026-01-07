@@ -1,7 +1,7 @@
 
 # Swiggy Restaurant Recommendation System
 
- Project Overview
+ Project Overview:
 This project builds a restaurant recommendation system using Swiggy restaurant data.  
 Recommendations are generated based on restaurant similarity using clustering and similarity measures, and results are displayed through a Streamlit web application.
 
@@ -42,3 +42,6 @@ The Streamlit app provides:
  How to Run
 
 In the terminal entre, streamlit run st.py
+
+finally:
+This project implements a Swiggy restaurant recommendation system using machine learning techniques. The first file performs data cleaning and preprocessing, where the raw dataset is inspected, cleaned, and saved as two outputs: a cleaned CSV file and a fully numerical preprocessed dataset stored using Pickle. The second file applies K-Means clustering on the preprocessed data and generates restaurant recommendations based on cluster similarity and ranking metrics. The final file is a Streamlit application that takes user input and displays recommended restaurants through an interactive web interface. This setup ensures a clear separation between data preparation, model logic, and user interaction.

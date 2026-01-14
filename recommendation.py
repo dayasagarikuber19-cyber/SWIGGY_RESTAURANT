@@ -7,7 +7,7 @@ cleaned_df = pd.read_csv("swiggy_CLEANED.csv")
 with open("preprocessed_data.pkl", "rb") as f:
     preprocessed_df = pickle.load(f)
 
-kmeans = KMeans(n_clusters=20, random_state=42, n_init=10)
+kmeans = KMeans(n_clusters=7, random_state=42, n_init=10)
 kmeans.fit(preprocessed_df)
 
 cleaned_df = cleaned_df.reset_index(drop=True)
@@ -42,3 +42,4 @@ if __name__ == "__main__":
             ["city", "cuisine", "cost", "rating", "rating_count"]
         ]
     )
+
